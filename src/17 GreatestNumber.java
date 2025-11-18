@@ -5,19 +5,19 @@ class GreatestNumber {
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to Greatest Number Calculation");
         System.out.print("Please Enter your First  Number: ");
-        double firstNumber = input.nextDouble();
+        int firstNumber = input.nextInt();
         System.out.print("Please Enter your Second Number: ");
-        double secondNumber = input.nextDouble();
+         int secondNumber = input.nextInt();
         System.out.print("Please Enter your Third Number: ");
-        double thirdNumber = input.nextDouble();
+          int thirdNumber = input.nextInt();
 
 
-        if (firstNumber > secondNumber && firstNumber > thirdNumber) {
-            System.out.println("firstNumber is Greater");
-        } else if (secondNumber >thirdNumber && secondNumber > firstNumber) {
-            System.out.println("Second Number is Greater");
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
+            System.out.println(firstNumber+" firstNumber is Greater");
+        } else if (secondNumber >=thirdNumber) {
+            System.out.println(secondNumber+" Second Number is Greater");
         } else {
-            System.out.println("ThirdNumber is Greater");
+            System.out.println(thirdNumber+" ThirdNumber is Greater");
         }
     }
 }
